@@ -20,9 +20,9 @@ namespace KataCodWars.Kata.Kata6kyu
 
     public class Kata4
     {
-        public static long findNb(long m)
-        {
-            // your code
-        }
+        //public static long findNb(long m)
+        //{
+        //    // your code
+        //}
     }
 }

@@ -11,7 +11,10 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Kata4.findNb(4183059834009));
+            foreach (var item in Kata5.DeleteNth(new int[] { 1, 2, 3, 2, 3, 1, 3, 3, 2, 2 }, 3))
+            {
+                Console.WriteLine(item);
+            };
         }
     }
 }
