@@ -11,10 +11,12 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            foreach (var item in Kata5.DeleteNth(new int[] { 1, 2, 3, 2, 3, 1, 3, 3, 2, 2 }, 3))
-            {
-                Console.WriteLine(item);
-            };
+            Console.WriteLine(Kata6.Likes(new string[0]));
+            Console.WriteLine(Kata6.Likes(new string[] { "Peter" }));
+            Console.WriteLine(Kata6.Likes(new string[] { "Jacob", "Alex" }));
+            Console.WriteLine(Kata6.Likes(new string[] { "Max", "John", "Mark" }));
+            Console.WriteLine(Kata6.Likes(new string[] { "Alex", "Jacob", "Mark", "Max" }));
+            Console.WriteLine(Kata6.Likes(new string[] { "Alex", "Jacob", "Mark", "Max", "Nike" }));
         }
     }
 }
