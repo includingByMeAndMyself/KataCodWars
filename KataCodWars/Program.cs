@@ -11,9 +11,25 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            Kata7.GetUnique(new[] { 1, 2, 2, 2 });
-            Kata7.GetUnique(new[] { -2, 2, 2, 2 });
-            Kata7.GetUnique(new[] { 11, 11, 14, 11, 11 });
+            foreach (var arg in Kata8.TwoSum(new[] { 1, 2, 3 }, 4))
+            {
+                Console.Write(arg);
+                Console.Write(" ");
+            }
+
+            foreach (var arg in Kata8.TwoSum(new[] { 1234, 5678, 9012 }, 14690))
+            {
+                Console.Write(arg);
+                Console.Write(" ");
+            }
+
+            foreach (var arg in Kata8.TwoSum(new[] { 2, 2, 3 }, 4))
+            {
+                Console.Write(arg);
+                Console.Write(" ");
+            }
+            
+            
         }
     }
 }
