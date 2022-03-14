@@ -11,25 +11,14 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            foreach (var arg in Kata8.TwoSum(new[] { 1, 2, 3 }, 4))
-            {
-                Console.Write(arg);
-                Console.Write(" ");
-            }
-
-            foreach (var arg in Kata8.TwoSum(new[] { 1234, 5678, 9012 }, 14690))
-            {
-                Console.Write(arg);
-                Console.Write(" ");
-            }
-
-            foreach (var arg in Kata8.TwoSum(new[] { 2, 2, 3 }, 4))
-            {
-                Console.Write(arg);
-                Console.Write(" ");
-            }
+            var res1 = Xbonacci.Tribonacci(new double[] { 1, 1, 1 }, 10);
+            var res2 = Xbonacci.Tribonacci(new double[] { 0, 0, 1 }, 10);
+            var res3= Xbonacci.Tribonacci(new double[] { 0, 1, 1 }, 10);
             
-            
+            var res4= Xbonacci.Tribonacci(new double[] { 17, 11, 12 }, 36);
+            var res5= Xbonacci.Tribonacci(new double[] { 15, 1, 11 }, 41);
+            var res6= Xbonacci.Tribonacci(new double[] { 14, 9, 9 }, 22);
+            var res7= Xbonacci.Tribonacci(new double[] { 19, 2, 6 }, 2);
         }
     }
 }
