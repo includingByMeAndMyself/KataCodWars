@@ -38,7 +38,7 @@ namespace KataCodWars.Kata.Kata6kyu
         //решение рожденное за минуту
         public static double[] Tribonacci(double[] signature, int n)
         {
-            if(n == 0) return new double[] {};
+            if (n == 0) return new double[] { };
 
             var a = signature[0];
             var b = signature[1];
@@ -58,7 +58,7 @@ namespace KataCodWars.Kata.Kata6kyu
             var j = 1;
             var g = 2;
 
-            for(int i = 3; i < n; i++)
+            for (int i = 3; i < n; i++)
             {
                 res[i] = res[f] + res[j] + res[g];
                 f++;
@@ -67,6 +67,36 @@ namespace KataCodWars.Kata.Kata6kyu
             }
 
             return res;
+        }
+
+
+        //public double[] xbonacci(double[] signature, int n)
+        //{
+        //    var sequence = new List<double>(signature);
+        //    int count = signature.Length;
+        //    for (int i = count; i < n; i++)
+        //        sequence.Add(sequence.Skip(i - count).Take(count).Sum());
+        //    return sequence.Take(n).ToArray();
+        //}
+
+        public static double[] xbonacci(double[] s, int n)
+        {
+            double[] res = new double[n];
+
+            Array.Copy(s, res, Math.Min(s.Length, n));
+
+            for (int i = s.Length; i < n; i++)
+            {
+                var count = s.Length;
+
+                while (count > 0)
+                {
+                    res[i] += res[i - count];
+                    count--;
+                }
+            }
+
+            return n == 0 ? new double[] { } : res;
         }
     }
 }
