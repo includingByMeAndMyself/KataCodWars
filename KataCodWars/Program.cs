@@ -11,7 +11,7 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            var res = Kata11.MultiplicationTable(3);
+            var res = Kata12.IsPangram("The quick brown fox jumps over the lazy dog.");
 
         }
     }
