@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 //using KataCodWars.Kata.Kata8kyu;
-//using KataCodWars.Kata.Kata7kyu;
-using KataCodWars.Kata.Kata6kyu;
+using KataCodWars.Kata.Kata7kyu;
+//using KataCodWars.Kata.Kata6kyu;
 
 namespace KataCodWars
 {
@@ -11,7 +11,7 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            var answ = Tower.TowerBuilder(6);
+            var s = Binary.AddBinary(1,2);
         }
     }
 }
