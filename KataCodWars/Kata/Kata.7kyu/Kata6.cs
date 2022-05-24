@@ -29,5 +29,22 @@ namespace KataCodWars.Kata.Kata7kyu
 
             return arr.Max() + " " + arr.Min();
         }
+
+
+        //public static int sumTwoSmallestNumbers(int[] numbers)
+        //{
+        //    return numbers.OrderBy(i => i).Take(2).Sum();
+        //}
+
+        public static int sumTwoSmallestNumbers(int[] numbers)
+        {
+            if(numbers.Length < 1) return 0;
+
+            var firstMin = numbers.Min();
+
+            var secondMin = numbers.Where(x => x != firstMin).Min();
+
+            return secondMin + firstMin;
+        }
     }
 }
