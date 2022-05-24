@@ -11,7 +11,7 @@ namespace KataCodWars
     {
         static void Main(string[] args)
         {
-            var s = Binary.AddBinary(1,2);
+            var s = Kata6.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
         }
     }
 }
