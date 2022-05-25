@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KataCodWars.Kata
 {
-    public class Kata6kyu
+    public static class Kata6kyu
     {
         #region Kata 1
         public static double Solution(double n) => Math.Round(n * 2) / 2;
@@ -538,6 +538,22 @@ namespace KataCodWars.Kata
             }
 
             return n == 0 ? new double[] { } : res;
+        }
+        #endregion
+
+        #region Kata 18
+        public static long FindNb(long m)
+        {
+            var res = 0L;
+            var num = 1;
+
+            while (res < m)
+            {
+                res += Convert.ToInt64(Math.Pow(num, 3));
+                num++;
+            }
+
+            return res == m ? num - 1 : -1;
         } 
         #endregion
     }

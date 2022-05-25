@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace KataCodWars.Kata
 {
-    public class Kata8kyu
+    public static class Kata8kyu
     {
         #region Kata 1
         //public class NthSeries
